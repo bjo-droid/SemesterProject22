@@ -8,24 +8,28 @@ body {
   background-color: #f2f2f2;
 }
 
+.welcome-logo img {
+  box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.5);
+}
+
 .label {
   z-index: 2;
 }
 
 .slide {
   height: 100%;
-  width: 180px;
+  width: 50%;
   position: absolute;
   background-color: #fff;
   transition: 0.5s ease;
-  transform: translateX(-180px);
+  transform: translateX(-100%);
   z-index: 1;
 }
 
 h1 {
   color: #8000ff;
   font-weight: 800;
-  text-align: right;
+  text-align: center;
   padding: 20px 0;
   padding-right: 20px;
   pointer-events: none;
