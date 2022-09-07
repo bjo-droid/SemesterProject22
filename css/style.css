@@ -266,10 +266,12 @@ header {
 .display-container,
 .article-container {
   display: inline-grid;
-  column-gap: 2rem;
+  column-gap: 5rem;
   grid-template-columns: auto auto auto;
 }
-
+.display-box {
+  padding-bottom: 5rem;
+}
 .display-box img {
   max-height: 200px;
   transition: transform 0.5s ease;
@@ -294,6 +296,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5rem;
 }
 
 .plan-box {
@@ -342,7 +345,7 @@ header {
 }
 
 .article-section {
-  padding: 50px 0 0;
+  padding: 5rem 0 5rem;
 }
 
 .article-box {
@@ -360,8 +363,35 @@ header {
   transform: scale(1.05);
 }
 
-.footer {
-  background-color: black;
-  padding: 10rem;
+footer {
+  background-color: #1b1b1f;
+  padding: 50px 20px;
+}
+
+.footer-container {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.footer-link h1 {
   color: white;
+}
+.footer-link ul {
+  list-style: none;
+}
+
+.footer-link ul li a {
+  color: #ffff;
+  opacity: 0.5;
+  margin: 4px 0px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all ease 0.3s;
+  text-decoration: none;
+}
+
+.footer-link li a:hover {
+  opacity: 1;
+  transition: all ease 0.3s;
 }
