@@ -359,3 +359,9 @@ header {
 .article-box:hover {
   transform: scale(1.05);
 }
+
+.footer {
+  background-color: black;
+  padding: 10rem;
+  color: white;
+}
