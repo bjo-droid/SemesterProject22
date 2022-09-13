@@ -174,7 +174,8 @@ header {
 }
 
 #ticketbtn,
-#showbtn {
+#showbtn,
+#bookbtn {
   font-size: 2rem;
   padding: 2rem;
   background-color: white;
@@ -186,8 +187,16 @@ header {
   justify-content: center;
   align-items: center;
 }
+
+#ticketbtn .button-box a,
+#bookbtn .bookbtn-box a {
+  text-decoration: none;
+  color: #1b1b1f;
+}
+
 #ticketbtn .button-box button,
-#showbtn .button-box button {
+#showbtn .button-box button,
+#bookbtn .bookbtn-box button {
   background-color: white;
   border: none;
   color: black;
@@ -204,7 +213,8 @@ header {
 }
 
 #ticketbtn .button-box button:hover,
-#showbtn .button-box button:hover {
+#showbtn .button-box button:hover,
+#bookbtn .bookbtn-box button:hover {
   background-color: #555555;
   color: white;
 }
@@ -213,7 +223,7 @@ header {
   display: flex;
   justify-content: center;
   background-color: white;
-  padding-bottom: 50px;
+  padding: 1rem;
 }
 
 .info-right,
@@ -228,6 +238,7 @@ header {
 
 .news-container {
   background-color: white;
+  padding: 5rem 0;
 }
 .news {
   background: #e7e7e7;
@@ -250,7 +261,7 @@ header {
 }
 
 .show-off {
-  padding: 10rem 0 2.5rem;
+  padding: 5rem 0 2.5rem;
   background: white;
 }
 
@@ -366,6 +377,9 @@ header {
 footer {
   background-color: #1b1b1f;
   padding: 50px 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-container {
@@ -394,4 +408,90 @@ footer {
 .footer-link li a:hover {
   opacity: 1;
   transition: all ease 0.3s;
+}
+
+/* Tickets */
+
+.booking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking input {
+  visibility: visible;
+  display: block;
+}
+
+.booking select,
+.booking input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #e7e7e7;
+  font-size: 16px;
+}
+
+.ticket-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#bookbtn .bookbtn-box {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile friendly */
+
+@media screen and (max-width: 600px) {
+  header img {
+    width: 75%;
+  }
+
+  .slide {
+    width: 100%;
+  }
+
+  .info-box {
+    display: block;
+  }
+
+  .info-left {
+    padding-bottom: 5rem;
+  }
+
+  .news {
+    width: 100%;
+  }
+
+  .news-article p {
+    padding: 0 1rem 2.5rem;
+  }
+
+  .news-headline h2 {
+    padding: 0 1.5rem;
+  }
+
+  .plan-container {
+    display: block;
+  }
+
+  .banner-container img {
+    max-width: 100%;
+  }
+
+  .footer-container h1 {
+    font-size: 1rem;
+  }
+
+  .footer-link ul li a {
+    font-size: 0.8rem;
+  }
 }
