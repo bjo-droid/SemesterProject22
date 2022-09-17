@@ -662,6 +662,41 @@ label {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .display-container {
+    display: block;
+  }
+
+  .plan-container {
+    display: block;
+  }
+
+  .plan-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .plan-img {
+    padding: 0 0 2rem;
+  }
+
+  .article-container {
+    display: block;
+  }
+
+  .article-box {
+    margin: 2rem;
+  }
+  .pay-container {
+    margin: 5rem 1rem;
+    padding: 5rem 1rem;
+  }
+
+  .contact {
+    width: 90%;
+  }
+}
+
 /* Mobile friendly */
 
 @media screen and (max-width: 600px) {
