@@ -373,10 +373,15 @@ header {
   width: 250px;
   border: 1px solid;
   padding: 1.2rem;
-  background-image: url("../imgs/glenn-carstens-peters-1F4MukO0UNg-unsplash.jpg");
   background-size: cover;
   background-position: center;
   transition: transform 0.5s ease;
+}
+
+.picture-text {
+  background-color: #555555;
+  color: #e7e7e7;
+  padding: 0.5rem;
 }
 
 .article-box:hover {
