@@ -388,6 +388,7 @@ header {
 
 .picture-text a {
   color: #e7e7e7;
+  text-decoration: none;
 }
 
 .article-box:hover {
