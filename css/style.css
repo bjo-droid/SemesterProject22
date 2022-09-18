@@ -49,7 +49,7 @@ body {
 .slide ul li a {
   color: #f2f2f2;
   font-weight: 700;
-  padding: 5px 25px;
+  padding: 5px;
   display: block;
   text-transform: uppercase;
   text-decoration: none;
@@ -64,7 +64,7 @@ body {
 
 .slide ul li a i {
   width: 40px;
-  text-align: center;
+  margin: 0 15px 0;
 }
 
 input {
@@ -594,13 +594,21 @@ label {
 /* Product Page */
 
 .product-banner img {
-  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
   height: auto;
 }
 
 .product-container {
-  text-align: center;
+  text-align: left;
   background-color: white;
+}
+
+.product-title h1,
+.product-info h2,
+.product-info h3 {
+  text-align: center;
 }
 
 .product-title {
@@ -663,6 +671,11 @@ label {
   .contact {
     width: 90%;
   }
+
+  .banner-container img,
+  .product-banner img {
+    max-width: 100%;
+  }
 }
 
 /* Smaller screeN */
@@ -674,6 +687,10 @@ label {
 
   .plan-container {
     display: block;
+  }
+
+  .plan-box {
+    padding: 0 0 0 15rem;
   }
 
   .plan-img img {
@@ -699,6 +716,11 @@ label {
 
   .contact {
     width: 90%;
+  }
+
+  .banner-container img,
+  .product-banner img {
+    max-width: 100%;
   }
 }
 
@@ -737,7 +759,25 @@ label {
     display: block;
   }
 
-  .banner-container img {
+  .plan-headline h2 {
+    font-size: 2.5rem;
+  }
+  .plan-box {
+    padding: 0 2.5rem;
+  }
+
+  .product-container {
+    text-align: left;
+  }
+
+  .product-title h1,
+  .product-info h2,
+  .product-info h3 {
+    text-align: center;
+  }
+
+  .banner-container img,
+  .product-banner img {
     max-width: 100%;
   }
 
@@ -771,5 +811,13 @@ label {
 
   .contact-article {
     display: block;
+  }
+
+  .contact-headline {
+    font-size: 1.5rem;
+  }
+
+  .contact-box {
+    padding: 1rem 3rem 2rem;
   }
 }
